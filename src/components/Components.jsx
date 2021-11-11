@@ -9,26 +9,20 @@ import ReceitasProntas from '../pages/ReceitasProntas';
 import ReceitasFavoritas from '../pages/ReceitasFavoritas';
 import ExplorarComidas from '../pages/ExplorarComidas';
 import ExplorarBebidas from '../pages/ExplorarBebidas';
-import ReceitasEmProgresso from '../pages/ReceitasEmProgresso';
 import DetalhesReceitas from '../pages/DetalhesReceitas';
 import ExplorarComidasArea from '../pages/ExplorarComidasArea';
 import ExplorarIngredientes from '../pages/ExplorarIngredientes';
+import InProgress from '../pages/InProgress';
 
 export default function Components() {
   return (
     <Switch>
 
-      <Route path="/comidas/{id-da-receita}" component={ DetalhesReceitas } />
-      <Route path="/bebidas/{id-da-receita}" component={ DetalhesReceitas } />
+      <Route exact path="/comidas/:id" component={ DetalhesReceitas } />
+      <Route exact path="/bebidas/:id" component={ DetalhesReceitas } />
 
-      <Route
-        path="/comidas/{id-da-receita}/in-progress"
-        component={ ReceitasEmProgresso }
-      />
-      <Route
-        path="/bebidas/{id-da-receita}/in-progress"
-        component={ ReceitasEmProgresso }
-      />
+      <Route path="/comidas/:id/in-progress" component={ InProgress } />
+      <Route path="/bebidas/:id/in-progress" component={ InProgress } />
 
       <Route exact path="/explorar" component={ Explorar } />
       <Route exact path="/explorar/comidas" component={ ExplorarComidas } />
@@ -38,6 +32,7 @@ export default function Components() {
       <Route path="/explorar/bebidas/ingredientes" component={ ExplorarIngredientes } />
 
       <Route path="/explorar/comidas/area" component={ ExplorarComidasArea } />
+      <Route path="/explorar/bebidas/area" render={ () => 'Not Found' } />
 
       <Route path="/perfil" component={ Perfil } />
       <Route path="/receitas-feitas" component={ ReceitasProntas } />
