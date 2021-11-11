@@ -6,7 +6,7 @@ export default function Compartilhar({ idReceita }) {
   const [copied, setCopied] = useState(false);
 
   function handleClick(id) {
-    navigator.clipboard.writeText(`http://localhost:3000${id}`);
+    window.navigator.clipboard.writeText(`http://localhost:3000${id}`);
     setCopied(true);
   }
 

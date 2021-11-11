@@ -21,7 +21,8 @@ export default function FavoriteAndShareBtn(props) {
 
   function copyUrlToClipboard() {
     setLinkCopied('Link copiado!');
-    navigator.clipboard.writeText(window.location.href.replace('/in-progress', ''));
+    window.navigator.clipboard
+      .writeText(window.location.href.replace('/in-progress', ''));
   }
 
   const addOrRemoveFavoriteRecipe = () => {
