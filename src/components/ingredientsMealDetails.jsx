@@ -1,4 +1,4 @@
-function ingredientsMealDetails(details) {
+function IngredientsMealDetails(details) {
   const four = 4;
   const nine = 9;
   const fourtyEigth = 48;
@@ -19,4 +19,4 @@ function ingredientsMealDetails(details) {
   return ingredientsList;
 }
 
-export default ingredientsMealDetails;
+export default IngredientsMealDetails;
