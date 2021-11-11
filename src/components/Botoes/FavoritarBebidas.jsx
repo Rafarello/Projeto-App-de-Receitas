@@ -16,7 +16,6 @@ export default function FavoritarBebidas({ receita }) {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-
   function saveFavoriteToLocalStorage(recipe) {
     setIsFavorited(true);
     let favoriteRecipes = JSON.parse(localStorage.getItem('favoriteRecipes'));
