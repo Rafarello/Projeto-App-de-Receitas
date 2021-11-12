@@ -9,20 +9,20 @@ import ReceitasProntas from '../pages/ReceitasProntas';
 import ReceitasFavoritas from '../pages/ReceitasFavoritas';
 import ExplorarComidas from '../pages/ExplorarComidas';
 import ExplorarBebidas from '../pages/ExplorarBebidas';
-import ReceitasEmProgresso from '../pages/ReceitasEmProgresso';
 import DetalhesReceitas from '../pages/DetalhesReceitas';
 import ExplorarComidasArea from '../pages/ExplorarComidasArea';
 import ExplorarIngredientes from '../pages/ExplorarIngredientes';
+import InProgress from '../pages/InProgress';
 
 export default function Components() {
   return (
     <Switch>
 
-      <Route path="/comidas/:id/in-progress" component={ ReceitasEmProgresso } />
-      <Route path="/bebidas/:id/in-progress" component={ ReceitasEmProgresso } />
-
       <Route exact path="/comidas/:id" component={ DetalhesReceitas } />
       <Route exact path="/bebidas/:id" component={ DetalhesReceitas } />
+
+      <Route path="/comidas/:id/in-progress" component={ InProgress } />
+      <Route path="/bebidas/:id/in-progress" component={ InProgress } />
 
       <Route exact path="/explorar" component={ Explorar } />
       <Route exact path="/explorar/comidas" component={ ExplorarComidas } />

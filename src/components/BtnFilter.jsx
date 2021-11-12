@@ -63,7 +63,7 @@ export default function BtnFilter({ page }) {
       <button
         type="button"
         data-testid="All-category-filter"
-        onClick={ (e) => handleClick(e) }
+        onClick={ (e) => voltarReceitas(e) }
       >
         All
 

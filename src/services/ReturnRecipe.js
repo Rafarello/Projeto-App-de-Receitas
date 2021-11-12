@@ -1,6 +1,6 @@
 import { fetchFoodDetails, fetchDrinksDetails } from './RequestApi';
-import ingredientsMealDetails from '../components/IngredientsMealDetails';
-import ingredientsDrinksDetails from '../components/IngredientsDrinksDetails';
+import ingredientsMealDetails from '../components/ingredientsMealDetails';
+import ingredientsDrinksDetails from '../components/ingredientsDrinksDetails';
 
 const ReturnRecipe = async (id, pathname) => {
   if (pathname.includes('comidas')) {
