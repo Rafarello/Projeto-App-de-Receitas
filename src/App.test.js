@@ -42,6 +42,7 @@ describe('1- Faça o teste da página de Login', () => {
     
     expect(submitButton).toBeDisabled();
 
+    
     userEvent.type(inputLogin, 'email@email.com');
     expect(inputLogin).toHaveValue('email@email.com');
     fireEvent.change(inputPassword, { target: { value: '1234567' } });
