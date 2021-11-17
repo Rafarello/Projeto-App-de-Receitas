@@ -3,12 +3,9 @@ import { render, screen, fireEvent } from '@testing-library/react';
 import App from './App';
 import userEvent from '@testing-library/user-event';
   
-
-
 describe('1- Faça o teste da página de Login', () => {
   it('Deve ter todos os elementos e atributos descritos no protótipo para a tela de login', async () => {
     render(<App />)
-
     const inputLogin = await screen.findByTestId('email-input');
     const inputPassword = await screen.findByTestId('password-input');
     const submitButton = await screen.findByTestId('login-submit-btn');
@@ -19,13 +16,11 @@ describe('1- Faça o teste da página de Login', () => {
   it('Desenvolva a tela de login de maneira que cumpra os requisitos do input de login e password para liberarem o botão entrar',
   async () => {
     render(<App />)
-
     const inputLogin = await screen.findByTestId('email-input');
     const inputPassword = await screen.findByTestId('password-input');
     const submitButton = await screen.findByTestId('login-submit-btn');
     
     expect(submitButton).toBeDisabled();
-
     fireEvent.change(inputLogin, { target: { value: 'email@email.com' } });
     expect(inputLogin).toHaveValue('email@email.com');
     fireEvent.change(inputPassword, { target: { value: '1234567' } });
@@ -35,13 +30,13 @@ describe('1- Faça o teste da página de Login', () => {
   it('Salve 2 tokens no localStorage, cocktailsToken e mealsToken, e redireciona a página após a submissão do login',
   async () => {
     render(<App />);
-
     const inputLogin = await screen.findByTestId('email-input');
     const inputPassword = await screen.findByTestId('password-input');
     const submitButton = await screen.findByTestId('login-submit-btn');
-    
+
     expect(submitButton).toBeDisabled();
- 
+
+
     userEvent.type(inputLogin, 'email@email.com');
     expect(inputLogin).toHaveValue('email@email.com');
     fireEvent.change(inputPassword, { target: { value: '1234567' } });
