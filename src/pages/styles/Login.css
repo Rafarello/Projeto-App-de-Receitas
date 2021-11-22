@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  align-items: center;
+  background-image: url('https://images.pexels.com/photos/3186654/pexels-photo-3186654.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+body {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  padding-bottom: 8em;
+}
+
+.container {
+  align-items: center;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  padding: 5em 10em 6em;
+}
+
+.inputs-container {
+  display: flex;
+  flex-grow: 1;
+  gap: 0.3em;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.13em;
+}
+
+div > h1 {
+  font-family: monospace;
+  font-size: 3.8em;
+  margin-bottom: 1.5em;
+}
+
+input, button {
+  background-color: rgb(221, 221, 221);
+  border: none;
+  border-radius: 0;
+  padding: 0.5em 0.25em;
+}
+
+button {
+  padding: 0.5em 1.5em;
+}
+
+button:enabled {
+  background-color: rgb(102, 101, 101);
+  color: white;
+}

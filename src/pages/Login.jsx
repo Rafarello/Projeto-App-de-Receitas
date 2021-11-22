@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 
+import './styles/Login.css';
+
 export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -38,32 +40,36 @@ export default function Login() {
   }
 
   return (
-    <div>
+    <div className="container">
       <h1>LOGIN</h1>
-      <input
-        data-testid="email-input"
-        type="email"
-        placeholder="Email"
-        value={ email }
-        onChange={ ({ target }) => inputEmail(target.value) }
-      />
-      <input
-        type="password"
-        data-testid="password-input"
-        placeholder="Senha"
-        value={ password }
-        onChange={ (e) => setPassword(e.target.value) }
-      />
-      <button
-        data-testid="login-submit-btn"
-        type="button"
-        disabled={ buttonDisabled() }
-        onClick={ () => handleClick() }
-      >
-        {' '}
-        Entrar
+      <div className="inputs-container">
+        <div className="inputs">
+          <input
+            data-testid="email-input"
+            type="email"
+            placeholder="Email"
+            value={ email }
+            onChange={ ({ target }) => inputEmail(target.value) }
+          />
+          <input
+            type="password"
+            data-testid="password-input"
+            placeholder="Senha"
+            value={ password }
+            onChange={ (e) => setPassword(e.target.value) }
+          />
+        </div>
+        <button
+          data-testid="login-submit-btn"
+          type="button"
+          disabled={ buttonDisabled() }
+          onClick={ () => handleClick() }
+        >
+          {' '}
+          Entrar
 
-      </button>
+        </button>
+      </div>
     </div>
   );
 }
