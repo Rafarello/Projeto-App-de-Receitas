@@ -50,3 +50,23 @@ As rotas utilizadas na aplicação são as seguintes:
 * Tela de receitas feitas: `/receitas-feitas`;
 * Tela de receitas favoritas: `/receitas-favoritas`.
 
+--- 
+
+### Linter
+
+Foi utilizado a ferramenta EsLint para garantir formatação e qualidade de código.
+
+---
+
+### Testes
+
+Foi iniciado o desenvolvimento dos testes da aplicação com a própria biblioteca do React, mas devido ao tempo limitado de desenvolvimento não conseguimos terminar todos os componentes.
+
+---
+
+### Para iniciar o projeto
+
+- Primeiro passo é fazer o clone em sua máquina.
+- Segundo passo é instalar as dependências do projeto digitando `npm install` no terminal
+- Terceiro passo é iniciar a aplicação digitando `npm run start` no terminal 
+
