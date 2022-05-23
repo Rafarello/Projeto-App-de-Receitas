@@ -1,11 +1,23 @@
 
 # Boas vindas ao repositório do projeto de App de Receitas!
 
+---
 
+# Resumo
+
+Projeto foi realizado em grupo com foco de aprendizado em Front-end, de um aplicativo de receitas de comidas e bebidas.
+
+Foram determinado pequenos requisitos para cada página, onde se tornavam um todo da aplicação. Após isso foi utilizado o Trello como ferramenta de organização (para quem não conhece, é um site que permite vc criar ambientes de trabalho no estilo Kanban), onde as colunas foram separadas em páginas e as linhas como requisito em ordem.
+
+Por ser um trabalho em grupo e foi realizado no maior tempo assíncronamente, foi necessário uma boa organização. Foi decidido para quem estivesse realizando o determinado requisito adicionasse seu nome e quando terminasse adicionasse um Checklist no cartão do requisito.
+
+Página do trello a seguir: https://trello.com/b/AaE1yEW3/grupo-11-app-de-receitas
+
+---
 
 # Habilidades
 
-Nesse projeto, você será capaz de:
+Nesse projeto, o grupo foi capaz de:
 
   - Utilizar _Redux_ para gerenciar estado
   - Utilizar a biblioteca _React-Redux_
